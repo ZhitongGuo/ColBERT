@@ -1,0 +1,189 @@
+ERROR: Unable to locate a modulefile for 'cuda/10.1'
+#> initializing Indexer
+  0%|          | 0/6915 [00:00<?, ?it/s]
+
+[Nov 02, 22:57:50] #> Note: Output directory /home/zhitongg/ColBERT/experiments/notebook/indexes/mind2web.1.2bits already exists
+
+
+[Nov 02, 22:57:50] #> Will delete 10 files already at /home/zhitongg/ColBERT/experiments/notebook/indexes/mind2web.1.2bits in 20 seconds...
+#> Starting...
+nranks = 1 	 num_gpus = 1 	 device=0
+{
+    "query_token_id": "[unused0]",
+    "doc_token_id": "[unused1]",
+    "query_token": "[Q]",
+    "doc_token": "[D]",
+    "ncells": null,
+    "centroid_score_threshold": null,
+    "ndocs": null,
+    "load_index_with_mmap": false,
+    "index_path": null,
+    "nbits": 2,
+    "kmeans_niters": 4,
+    "resume": false,
+    "similarity": "cosine",
+    "bsize": 64,
+    "accumsteps": 1,
+    "lr": 3e-6,
+    "maxsteps": 500000,
+    "save_every": null,
+    "warmup": null,
+    "warmup_bert": null,
+    "relu": false,
+    "nway": 2,
+    "use_ib_negatives": false,
+    "reranker": false,
+    "distillation_alpha": 1.0,
+    "ignore_scores": false,
+    "model_name": null,
+    "query_maxlen": 32,
+    "attend_to_mask_tokens": false,
+    "interaction": "colbert",
+    "dim": 128,
+    "doc_maxlen": 300,
+    "mask_punctuation": true,
+    "checkpoint": "colbert-ir\/colbertv2.0",
+    "triples": null,
+    "collection": [
+        "[1] RootWebArea '' focused: True",
+        "\t[98] StaticText 'Skip to main content'",
+        "\t\t[110] StaticText 'Use Tock at your business'",
+        "\t[128] button 'Book a reservation'",
+        "\t[129] button 'Reservations'",
+        "\t[130] button 'Search'",
+        "\t[132] button 'Profile image'",
+        "\t\t[373] img 'Profile image'",
+        "\t\t[148] StaticText 'DELICIOUS'",
+        "\t\t[150] StaticText 'STARTS'",
+        "\t\t[152] StaticText 'HERE.'",
+        "\t\t[374] StaticText 'Reservation type'",
+        "\t\t[168] combobox '' hasPopup: menu expanded: False",
+        "\t\t\t[376] menuitem 'Dine in' selected: True",
+        "\t\t\t[377] menuitem 'Pickup' selected: False",
+        "\t\t\t[378] menuitem 'Delivery' selected: False",
+        "\t\t\t[379] menuitem 'Events' selected: False",
+        "\t\t\t[380] menuitem 'Wineries' selected: False",
+        "\t\t\t[381] menuitem 'Everything' selected: False",
+        "\t\t[382] StaticText 'Location'",
+        "\t\t[172] textbox '' required: False",
+        "\t\t\t[383] StaticText 'Columbus, OH'",
+        "\t\t[384] StaticText 'Date'",
+        "\t\t[180] textbox '' required: False",
+        "\t\t\t[385] StaticText 'Thu, Mar 16'",
+        "\t\t[386] StaticText 'Time'",
+        "\t\t[187] combobox '' hasPopup: menu expanded: False",
+        "\t\t\t[388] menuitem 'Now' selected: True",
+        "\t\t\t[389] menuitem '8:30 PM' selected: False",
+        "\t\t\t[390] menuitem '9:00 PM' selected: False",
+        "\t\t\t[391] menuitem '9:30 PM' selected: False",
+        "\t\t\t[392] menuitem '10:00 PM' selected: False",
+        "\t\t\t[393] menuitem '10:30 PM' selected: False",
+        "\t\t\t[394] menuitem '11:00 PM' selected: False",
+        "\t\t\t[395] menuitem '11:30 PM' selected: False",
+        "\t\t[396] StaticText 'Party size'",
+        "\t\t[191] combobox '' hasPopup: menu expanded: False",
+        "\t\t\t[398] menuitem '1 guest' selected: True",
+        "\t\t\t[399] menuitem '2 guests' selected: False",
+        "\t\t\t[400] menuitem '3 guests' selected: False",
+        "\t\t\t[401] menuitem '4 guests' selected: False",
+        "\t\t\t[402] menuitem '5 guests' selected: False",
+        "\t\t\t[403] menuitem '6 guests' selected: False",
+        "\t\t\t[404] menuitem '7 guests' selected: False",
+        "\t\t\t[405] menuitem '8 guests' selected: False",
+        "\t\t\t[406] menuitem '9 guests' selected: False",
+        "\t\t\t[407] menuitem '10 guests' selected: False",
+        "\t\t[200] StaticText 'Search'",
+        "\t\t[202] heading 'Explore all that Tock has to offer'",
+        "\t\t[513] img 'Multiple dishes served with wine'",
+        "\t\t[518] StaticText 'Dine in'",
+        "\t\t[522] img 'Several bagged orders of food to-go'",
+        "\t\t[527] StaticText 'Pickup'",
+        "\t\t[531] img 'Opened container revealing a hamburger'",
+        "\t\t[536] StaticText 'Delivery'",
+        "\t\t[540] img 'Chef in a kitchen'",
+        "\t\t[545] StaticText 'Events'",
+        "\t\t[549] img 'People strolling a vineyard sipping wine'",
+        "\t\t[554] StaticText 'Wineries'",
+        "\t\t[211] heading 'New & Notable'",
+        "\t\t[421] StaticText 'The latest & greatest on Tock'",
+        "\t\t[419] StaticText 'Explore all'",
+        "\t\t[556] link 'Agni Columbus, OH - Brewery District Grill'",
+        "\t\t\t[595] heading 'Agni'",
+        "\t\t[558] link 'Streetside 62 Bistro Washington Court House, OH Restaurant'",
+        "\t\t\t[606] heading 'Streetside 62 Bistro'",
+        "\t\t[560] link \"Hell's Backbone Grill & Farm Boulder, UT Four Corners Farm To Table\"",
+        "\t\t\t[617] heading \"Hell's Backbone Grill & Farm\"",
+        "\t\t[562] link 'Symposium Cincinnati, OH - East Walnut HIlls Wine Shop'",
+        "\t\t\t[628] heading 'Symposium'",
+        "\t\t[564] link 'The Merchant Tavern Akron, OH - Merriman Valley American'"
+    ],
+    "queries": null,
+    "index_name": "mind2web.1.2bits",
+    "overwrite": false,
+    "root": "\/home\/zhitongg\/ColBERT\/experiments",
+    "experiment": "notebook",
+    "index_root": null,
+    "name": "2023-11\/02\/22.57.48",
+    "rank": 0,
+    "nranks": 1,
+    "amp": true,
+    "gpus": 1
+}
+[Nov 02, 22:58:17] [0] 		 # of sampled PIDs = 71 	 sampled_pids[:3] = [53, 1, 38]
+[Nov 02, 22:58:17] [0] 		 #> Encoding 71 passages..
+[Nov 02, 22:58:18] [0] 		 avg_doclen_est = 10.535211563110352 	 len(local_sample) = 71
+[Nov 02, 22:58:18] [0] 		 Creaing 256 partitions.
+[Nov 02, 22:58:18] [0] 		 *Estimated* 748 embeddings.
+[Nov 02, 22:58:18] [0] 		 #> Saving the indexing plan to /home/zhitongg/ColBERT/experiments/notebook/indexes/mind2web.1.2bits/plan.json ..
+WARNING clustering 711 points to 256 centroids: please provide at least 9984 training points
+Clustering 711 points in 128D to 256 clusters, redo 1 times, 4 iterations
+  Preprocessing in 0.00 s
+  Iteration 0 (0.01 s, search 0.01 s): objective=199.107 imbalance=1.536 nsplit=0         Iteration 1 (0.01 s, search 0.01 s): objective=108.502 imbalance=1.541 nsplit=1         Iteration 2 (0.01 s, search 0.01 s): objective=95.5194 imbalance=1.538 nsplit=1         Iteration 3 (0.01 s, search 0.01 s): objective=92.7018 imbalance=1.534 nsplit=0       [Nov 02, 22:58:18] Loading decompress_residuals_cpp extension (set COLBERT_LOAD_TORCH_EXTENSION_VERBOSE=True for more info)...
+[Nov 02, 22:59:02] Loading packbits_cpp extension (set COLBERT_LOAD_TORCH_EXTENSION_VERBOSE=True for more info)...
+[0.031, 0.04, 0.034, 0.031, 0.032, 0.036, 0.027, 0.026, 0.028, 0.041, 0.042, 0.027, 0.035, 0.034, 0.032, 0.037, 0.028, 0.042, 0.024, 0.028, 0.037, 0.041, 0.04, 0.035, 0.052, 0.03, 0.041, 0.039, 0.032, 0.035, 0.035, 0.033, 0.046, 0.037, 0.037, 0.035, 0.04, 0.047, 0.034, 0.036, 0.033, 0.039, 0.036, 0.033, 0.031, 0.033, 0.028, 0.036, 0.033, 0.034, 0.034, 0.032, 0.038, 0.03, 0.029, 0.042, 0.03, 0.026, 0.033, 0.027, 0.025, 0.029, 0.024, 0.03, 0.036, 0.039, 0.028, 0.022, 0.039, 0.028, 0.044, 0.035, 0.035, 0.032, 0.036, 0.031, 0.034, 0.033, 0.036, 0.037, 0.033, 0.038, 0.029, 0.029, 0.024, 0.03, 0.029, 0.02, 0.037, 0.038, 0.043, 0.043, 0.036, 0.029, 0.041, 0.023, 0.034, 0.027, 0.038, 0.028, 0.023, 0.031, 0.031, 0.037, 0.03, 0.036, 0.038, 0.022, 0.032, 0.031, 0.034, 0.036, 0.037, 0.028, 0.032, 0.027, 0.03, 0.036, 0.037, 0.033, 0.027, 0.035, 0.035, 0.032, 0.041, 0.037, 0.034, 0.031]
+[Nov 02, 22:59:43] #> Got bucket_cutoffs_quantiles = tensor([0.2500, 0.5000, 0.7500], device='cuda:0') and bucket_weights_quantiles = tensor([0.1250, 0.3750, 0.6250, 0.8750], device='cuda:0')
+[Nov 02, 22:59:43] #> Got bucket_cutoffs = tensor([-0.0179,  0.0002,  0.0183], device='cuda:0') and bucket_weights = tensor([-0.0455, -0.0065,  0.0069,  0.0469], device='cuda:0')
+[Nov 02, 22:59:43] avg_residual = 0.03350830078125
+0it [00:00, ?it/s][Nov 02, 22:59:43] [0] 		 #> Encoding 71 passages..
+[Nov 02, 22:59:43] [0] 		 #> Saving chunk 0: 	 71 passages and 748 embeddings. From #0 onward.
+1it [00:00, 37.06it/s][Nov 02, 22:59:43] [0] 		 #> Checking all files were saved...
+[Nov 02, 22:59:43] [0] 		 Found all files!
+[Nov 02, 22:59:43] [0] 		 #> Building IVF...
+[Nov 02, 22:59:43] [0] 		 #> Loading codes...
+
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 1283.84it/s][Nov 02, 22:59:43] [0] 		 Sorting codes...
+[Nov 02, 22:59:43] [0] 		 Getting unique codes...
+[Nov 02, 22:59:43] #> Optimizing IVF to store map from centroids to list of pids..
+[Nov 02, 22:59:43] #> Building the emb2pid mapping..
+[Nov 02, 22:59:43] len(emb2pid) = 748
+
+  0%|          | 0/256 [00:00<?, ?it/s]100%|██████████| 256/256 [00:00<00:00, 186381.15it/s][Nov 02, 22:59:43] #> Saved optimized IVF to /home/zhitongg/ColBERT/experiments/notebook/indexes/mind2web.1.2bits/ivf.pid.pt
+[Nov 02, 22:59:43] [0] 		 #> Saving the indexing metadata to /home/zhitongg/ColBERT/experiments/notebook/indexes/mind2web.1.2bits/metadata.json ..
+
+
+#> Joined...
+[Nov 02, 22:59:46] #> Loading codec...
+[Nov 02, 22:59:46] Loading decompress_residuals_cpp extension (set COLBERT_LOAD_TORCH_EXTENSION_VERBOSE=True for more info)...
+[Nov 02, 22:59:47] Loading packbits_cpp extension (set COLBERT_LOAD_TORCH_EXTENSION_VERBOSE=True for more info)...
+[Nov 02, 22:59:47] #> Loading IVF...
+[Nov 02, 22:59:47] #> Loading doclens...
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 11066.77it/s][Nov 02, 22:59:47] #> Loading codes and residuals...
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 1625.70it/s]
+  0%|          | 0/6915 [01:56<?, ?it/s]
+
+#> QueryTokenizer.tensorize(batch_text[0], batch_background[0], bsize) ==
+#> Input: . Check for pickup restaurant available in Boston, NY on March 18, 5pm with just one guest, 		 True, 		 None
+#> Output IDs: torch.Size([32]), tensor([  101,     1,  4638,  2005, 15373,  4825,  2800,  1999,  3731,  1010,
+         6396,  2006,  2233,  2324,  1010,  1019,  9737,  2007,  2074,  2028,
+         4113,   102,   103,   103,   103,   103,   103,   103,   103,   103,
+          103,   103])
+#> Output Mask: torch.Size([32]), tensor([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0])
+
+Traceback (most recent call last):
+  File "mind2web.py", line 105, in <module>
+    bounded_obs = get_bounded_windowed_obs(obs, query, web_indexer, set_k = set_k, adj = adj_size)
+TypeError: get_bounded_windowed_obs() got an unexpected keyword argument 'adj'

@@ -1,0 +1,15 @@
+ERROR: Unable to locate a modulefile for 'cuda/10.1'
+Traceback (most recent call last):
+  File "/home/zhitongg/ColBERT/mind2web.py", line 1, in <module>
+    from colbert import Indexer, Searcher
+  File "/home/zhitongg/ColBERT/colbert/__init__.py", line 1, in <module>
+    from .trainer import Trainer
+  File "/home/zhitongg/ColBERT/colbert/trainer.py", line 1, in <module>
+    from colbert.infra.run import Run
+  File "/home/zhitongg/ColBERT/colbert/infra/__init__.py", line 1, in <module>
+    from .run import *
+  File "/home/zhitongg/ColBERT/colbert/infra/run.py", line 4, in <module>
+    from colbert.utils.utils import create_directory, print_message, timestamp
+  File "/home/zhitongg/ColBERT/colbert/utils/utils.py", line 3, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
