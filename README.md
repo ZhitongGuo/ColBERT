@@ -5,6 +5,10 @@
 
 # ColBERT (v2)
 
+## This is an adaptation of ColBERT to be used on Mind2Web task.
+
+
+
 ### ColBERT is a _fast_ and _accurate_ retrieval model, enabling scalable BERT-based search over large text collections in tens of milliseconds.
 
 [<img align="center" src="https://colab.research.google.com/assets/colab-badge.svg" />](https://colab.research.google.com/github/stanford-futuredata/ColBERT/blob/main/docs/intro2new.ipynb)
