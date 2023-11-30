@@ -15,7 +15,7 @@ from colbert.infra import Run, RunConfig, ColBERTConfig
 app = FastAPI()
 
 class SearchRequest(BaseModel):
-    html: List[str]
+    obs: List[str]
     query: str
     task_id: int = 1
     k: int = 5
@@ -40,11 +40,11 @@ async def search(request: SearchRequest):
     try:
         index_name = f"'mind2web.{request.task_id}.2bits"
         with Run().context(RunConfig(nranks=1, experiment='notebook')):
-            indexer.index(name=index_name, collection=request.html, overwrite=True)
+            indexer.index(name=index_name, collection=request.obs, overwrite=True)
 
         # Perform search
         with Run().context(RunConfig(experiment='notebook')):
-            searcher = Searcher(index=index_name, collection=request.html)
+            searcher = Searcher(index=index_name, collection=request.obs)
             results = searcher.search(request.query, k=request.k)
 
         # Extract and format results

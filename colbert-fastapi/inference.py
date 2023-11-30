@@ -1,12 +1,18 @@
 import requests
+import pandas as pd
+
+
+df = pd.read_csv("preprocessed_mind2web.csv")
+obs = df.iloc[1,1].split('\n')
+query = df.iloc[1,0]
 
 # Define the endpoint
-url = "http://localhost:8001/search"
+url = "http://localhost:5001/search"
 
 # Define your search request data
 data = {
-    "html": ["<p>Your HTML content here</p>", "<p>More HTML content</p>"],  # Example HTML content
-    "query": "Your search query",
+    "obs": obs, 
+    "query": query,
     "task_id": 1,
     "k": 5
 }
